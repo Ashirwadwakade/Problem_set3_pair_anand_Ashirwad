@@ -1,0 +1,60 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"30538 Problem Set 3: git pair\"\n",
+        "author: \"Dema Therese\"\n",
+        "format: \n",
+        "  pdf:\n",
+        "    include-in-header: \n",
+        "       text: |\n",
+        "         \\usepackage{fvextra}\n",
+        "         \\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\\\\{\\}}\n",
+        "include-before-body:\n",
+        "  text: |\n",
+        "    \\RecustomVerbatimEnvironment{verbatim}{Verbatim}{\n",
+        "      showspaces = false,\n",
+        "      showtabs = false,\n",
+        "      breaksymbolleft={},\n",
+        "      breaklines\n",
+        "    }\n",
+        "---\n",
+        "\n",
+        "---"
+      ],
+      "id": "7d1990e7"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import pandas as pd\n",
+        "import numpy as np\n",
+        "\n",
+        "np.random.seed(42)\n",
+        "data = pd.DataFrame(np.random.rand(100), columns=['Random Numbers'])\n",
+        "\n",
+        "def preview_data(df):\n",
+        "    print(df.head())\n",
+        "\n",
+        "preview_data(data)"
+      ],
+      "id": "bc2d35a8",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/afreenwala/Library/Python/3.9/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
