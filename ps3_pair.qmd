@@ -29,8 +29,11 @@ data = pd.DataFrame(np.random.rand(100), columns=['Random Numbers'])
 def preview_data(df):
     output = []
     output.append(df.head())
+    output.append(df.describe())
     output.append(alt.Chart(data).mark_bar().encode())
+    
     return output
+
 
 preview_data(data)
 ```
