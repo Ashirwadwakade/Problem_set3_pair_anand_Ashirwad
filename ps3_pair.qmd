@@ -26,7 +26,10 @@ np.random.seed(42)
 data = pd.DataFrame(np.random.rand(100), columns=['Random Numbers'])
 
 def preview_data(df):
-    print(df.head())
+    combined_list = []
+    combined_list.append(df.head())
+    combined_list.append(df.describe())
+    return combined_list
 
 preview_data(data)
 ```
